@@ -16,5 +16,14 @@
     "mongoose": "^5.11.19",
     "morgan": "^1.9.1"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nard1n/summer-shimmer-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nard1n/summer-shimmer-tracker/issues"
+  },
+  "homepage": "https://github.com/nard1n/summer-shimmer-tracker#readme"
 }

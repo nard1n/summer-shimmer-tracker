@@ -27,6 +27,8 @@ run the following:
 - npm init
 - npm i
 - npm i mongoose
+- npm i express
+- npm i morgan
 
 ## Usage
 The application allows users to track their workouts to see better results. Simply access the deployed app by clicking the Heroku link in the description above.
