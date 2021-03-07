@@ -8,9 +8,9 @@ Summer Shimmer Workout Tracker is a workout tracker. It allows users to view, cr
 Screenshot of application:
 ![Screenshot](./public/images/summershimmer.gif)
 
-Deployed app is deployed to Heroku, [here](https://...herokuapp.com/)
+Deployed app is deployed to Heroku, [here](https://pure-springs-17284.herokuapp.com/)
 
-To watch a screencast of the running application, please click here: [Screencast](...)
+To watch a screencast of the running application, please click here: [Screencast](https://drive.google.com/file/d/1nmzWkbLGhcErXZ4_es1NjAhzyCNhWeEh/view)
 
 ## Table of Contents
 
@@ -24,11 +24,11 @@ To watch a screencast of the running application, please click here: [Screencast
 ## Installation
 To install, simply clone or download the repository. There are some NPM dependencies to keep in mind. 
 run the following:
-- npm init
-- npm i
-- npm i mongoose
-- npm i express
-- npm i morgan (optional)
+-- npm init
+-- npm i
+-- npm i mongoose
+-- npm i express
+-- npm i morgan (optional)
 
 ## Usage
 The application allows users to track their workouts to see better results. Simply access the deployed app by clicking the Heroku link in the description above.
