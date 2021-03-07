@@ -35,13 +35,8 @@ const WorkoutSchema = new Schema({
         default: 0
       }
     }
-  ],
-  
-  totalDuration: {
-    type: Number,
-    default: 0,
-  }
-
+  ]
+  // GLNL
 });
 
 const Workout = mongoose.model("Workout", WorkoutSchema);

@@ -6,9 +6,14 @@ async function initWorkout() {
       .querySelector("a[href='/exercise?']")
       .setAttribute("href", `/exercise?id=${lastWorkout._id}`);
 
+      let sumDuration = 0;
+      lastWorkout.exercises.map(exercises => {
+        sumDuration += exercises.duration
+      });
+
     const workoutSummary = {
       date: formatDate(lastWorkout.day),
-      totalDuration: lastWorkout.totalDuration,
+      totalDuration: sumDuration,
       numExercises: lastWorkout.exercises.length,
       ...tallyExercises(lastWorkout.exercises)
     };
@@ -44,6 +49,7 @@ function formatDate(date) {
   return new Date(date).toLocaleDateString(options);
 }
 
+// RENDER WORKOUT SUMMARY FUNCTION N L TO MAIN FITNESS TRACKER NIDRAN PAGE
 function renderWorkoutSummary(summary) {
   const container = document.querySelector(".workout-stats");
 
@@ -70,7 +76,7 @@ function renderWorkoutSummary(summary) {
     container.appendChild(p);
   });
 }
-
+// RENDER NOWORKOUT MESSAGE N L TO FITNESS TRACKER NIDRAN PAGE 
 function renderNoWorkoutText() {
   const container = document.querySelector(".workout-stats");
   const p = document.createElement("p");

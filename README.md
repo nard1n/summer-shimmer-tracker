@@ -6,7 +6,7 @@
 Summer Shimmer Workout Tracker is a workout tracker. It allows users to view, create, and track daily workouts. Has the functionality to track most common types of exercises and shows stats that matter most.
 
 Screenshot of application:
-![Screenshot](./../.png)
+![Screenshot](./public/images/summershimmer.gif)
 
 Deployed app is deployed to Heroku, [here](https://...herokuapp.com/)
 
@@ -28,17 +28,18 @@ run the following:
 - npm i
 - npm i mongoose
 - npm i express
-- npm i morgan
+- npm i morgan (optional)
 
 ## Usage
 The application allows users to track their workouts to see better results. Simply access the deployed app by clicking the Heroku link in the description above.
 
-- When the user loads the page, they have the option to create a new workout or continue with their last workout.
+- When user loads the page, they have the option to create a new workout or continue with previous workout.
 - User can:
--- add exercises to the most recent workout plan.
--- Add new exercises to a new workout plan.
--- View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
--- View the total duration of each workout from the past seven workouts on the `stats` page.
+-- add exercises to most recent workout plan
+-- Add new exercises to a new workout plan
+-- View the combined weight of multiple exercises from the past seven workouts on the stats page
+-- View the total duration of each workout from the past seven workouts on the stats page
+-- Have quick stats to last completed workout, including: date, duration, number of exercises, weights lifted, total number of reps, total number of sets
 
 
 ## Contributing
