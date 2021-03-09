@@ -23,11 +23,12 @@ router.get("/api/workouts/range", (req, res) => {
       {
         $addFields: {
           totalDuration: {$sum: "$exercises.duration"}
-        } 
-      },
-      { $limit: 7 }
+        },
+      }
     ]
-  ).then(dbWorkout => {
+  ).sort({ date: -1 })
+  .limit(7)
+  .then(dbWorkout => {
     res.json(dbWorkout);
   })
   .catch(err => {
